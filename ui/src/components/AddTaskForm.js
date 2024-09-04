@@ -27,17 +27,18 @@ function AddTaskForm(fetchTasks) {
       <Typography align="center" variant="h2" paddingTop={2} paddingBottom={2}>
         My Task List
       </Typography>
-      <div className="addTaskform"></div>
-      <TextField
-        size="small"
-        variant="outlined"
-        label="task"
-        value={newTask}
-        onChange={(e) => setNewTask(e.target.value)}
-      />
-      <Button disabled={!newTask} variant="outlined" onClick={addNewTask}>
-        <AddIcon />
-      </Button>
+      <div className="addTaskForm">
+        <TextField
+          size="small"
+          variant="outlined"
+          label="task"
+          value={newTask}
+          onChange={(e) => setNewTask(e.target.value)}
+        />
+        <Button disabled={!newTask} variant="outlined" onClick={addNewTask}>
+          <AddIcon />
+        </Button>
+      </div>
     </div>
   );
 }
